@@ -1,0 +1,27 @@
+.navbar-dark {
+    padding: 20px;
+    background-color: #212121;
+    font-size: 20px
+}
+
+body {
+    background: #444;
+    padding: 70px 0;
+    font: 15px/20px Arial, sans-serif;
+}
+
+.icon-img {
+    width: 80px;
+    margin: 0px 20px 20px 0px
+}
+
+@media screen and ( min-width: 768px) {
+    .container-fluid {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+}

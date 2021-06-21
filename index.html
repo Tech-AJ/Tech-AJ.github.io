@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Apoorva Jain</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles-index.css">
+
+
+i
+    <script>
+        var i = 0;
+        var txt = 'Hi! I am Apoorva Jain, final year M.Tech student in Computer Science & Engineering department at IIT Kanpur. I like to use technology to solve real world problems.' +
+                ' I am highly interested in System Design & Development, Computer Security and Machine Learning.' +
+            ' I have developed several Android Apps available on Play Store including Income Tax Calculator app which has been highly liked by the users. Curious to know more about me? Click the above navigation bar. ';
+        var speed = 50;
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("myself").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+    </script>
+</head>
+
+<body onload=typeWriter()>
+
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top ">
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="education.html">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+
+             <!--     <li class="nav-item">
+                    <a class="nav-link" href="experience.html">Experience</a>
+                </li>
+ -->
+
+            </ul>
+    </nav>
+
+
+    <div id="about" class="a">
+        <div class="container">
+
+            <div class="row row-content align-items-center">
+                <div class="col-12 text-center name">
+                    <h1><b>Apoorva Jain</b></h1>
+                    <p><b>MTech - Computer Science & Engineering
+                        <br> IIT Kanpur </b></p>
+                </div>
+
+            </div>
+
+
+            <div class=" row row-content align-items-center ">
+                <div class="col-12">
+                    <p id=myself></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js "></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+</script>
+
+</html>

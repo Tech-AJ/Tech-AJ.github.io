@@ -1,0 +1,48 @@
+myimage {
+    display: block;
+    width: 200px;
+    height: 270px;
+}
+
+.a {
+    padding: 100px 30px;
+    background-image: url(../img/background.jpg);
+    /* Full height */
+    width: 100vw;
+    height: 100vh;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    font-size: 26px
+}
+
+.name {
+    padding: 88px 100px 30px 100px
+}
+
+@media (max-width: 480px) {
+    .myimage {
+        display: block;
+        width: 150px;
+        height: 200px;
+    }
+    .a {
+        font-size: 16px;
+        background-image: url(../img/backgroundMob.jpg);
+    }
+    .name {
+        padding: 28px 4px 20px 4px
+    }
+}
+
+.navbar-dark {
+    padding: 20px;
+    background-color: #212121;
+    font-size: 20px
+}
+
+#myself {
+    margin: 50px auto;
+}
